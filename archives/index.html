@@ -18,21 +18,23 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"edwardvoon.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="https://edwardvoon.github.io/archives/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Edward voon">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="https://edwardvoon.github.io/archives/">
 
 
 <script class="page-configurations">
@@ -46,7 +48,32 @@
 </script>
 <title>Archive | Hexo</title>
   
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'j1ZqHGZpRq62FO7tDTJxcQ',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?80ba059447fe41061a9f6c9e77c9972c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -112,6 +139,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -125,11 +153,37 @@
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -334,16 +388,48 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="/js/local-search.js"></script>
 
 
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
 
 
 
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://edwardvoon.github.io/archives/',]
+      });
+      });
+  </script>
 
 
 </body>

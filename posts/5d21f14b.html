@@ -18,25 +18,27 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"edwardvoon.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="是大大的说撒  ![Edwardvoon](https:&#x2F;&#x2F;gitee.com&#x2F;edwardvoon&#x2F;hexooss&#x2F;raw&#x2F;aa5950b681f291c3aea2136aa515dd6b55107db8&#x2F;uPic&#x2F;WechatIMG1375.jpeg)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A picture">
-<meta property="og:url" content="http://example.com/posts/5d21f14b.html">
+<meta property="og:url" content="https://edwardvoon.github.io/posts/5d21f14b.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="是大大的说撒  ![Edwardvoon](https:&#x2F;&#x2F;gitee.com&#x2F;edwardvoon&#x2F;hexooss&#x2F;raw&#x2F;aa5950b681f291c3aea2136aa515dd6b55107db8&#x2F;uPic&#x2F;WechatIMG1375.jpeg)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-20T05:28:07.000Z">
-<meta property="article:modified_time" content="2021-03-20T06:31:00.463Z">
+<meta property="article:modified_time" content="2021-03-23T15:28:06.471Z">
 <meta property="article:author" content="Edward voon">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/posts/5d21f14b.html">
+<link rel="canonical" href="https://edwardvoon.github.io/posts/5d21f14b.html">
 
 
 <script class="page-configurations">
@@ -50,7 +52,32 @@
 </script>
 <title>A picture | Hexo</title>
   
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'j1ZqHGZpRq62FO7tDTJxcQ',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?80ba059447fe41061a9f6c9e77c9972c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -116,6 +143,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -129,11 +157,37 @@
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -236,7 +290,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/5d21f14b.html">
+    <link itemprop="mainEntityOfPage" href="https://edwardvoon.github.io/posts/5d21f14b.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -259,10 +313,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-03-20 13:28:07 / Modified: 14:31:00" itemprop="dateCreated datePublished" datetime="2021-03-20T13:28:07+08:00">2021-03-20</time>
+      <time title="Created: 2021-03-20 13:28:07" itemprop="dateCreated datePublished" datetime="2021-03-20T13:28:07+08:00">2021-03-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-23 23:28:06" itemprop="dateModified" datetime="2021-03-23T23:28:06+08:00">2021-03-23</time>
+      </span>
 
   
 </div>
@@ -277,7 +337,6 @@
         <center>是大大的说撒 </center>
 ![Edwardvoon](https://gitee.com/edwardvoon/hexooss/raw/aa5950b681f291c3aea2136aa515dd6b55107db8/uPic/WechatIMG1375.jpeg)
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=6663194273&auto=1&height=430"></iframe>
     </div>
 
     
@@ -294,7 +353,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://example.com/posts/5d21f14b.html" title="A picture">http://example.com/posts/5d21f14b.html</a>
+      <a href="https://edwardvoon.github.io/posts/5d21f14b.html" title="A picture">https://edwardvoon.github.io/posts/5d21f14b.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -323,6 +382,7 @@
 
 
 
+    <div class="comments gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -372,17 +432,69 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="/js/local-search.js"></script>
 
 
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
 
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://edwardvoon.github.io/posts/5d21f14b.html',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '',
+      clientSecret: '',
+      repo        : '',
+      owner       : '',
+      admin       : [''],
+      id          : 'fc8b47c95812248616fa26ae54a5064e',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
