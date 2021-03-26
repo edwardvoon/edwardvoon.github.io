@@ -22,7 +22,7 @@
   <entry>
     <title>npm命令汇总整理</title>
     <url>/posts/5d21f14b.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;npm 是 JavaScript 世界的包管理工具,并且是 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL3poLWNuLw==">NodeJs<i class="fa fa-external-link-alt"></i></span> 平台的默认包管理工具。来自各大洲的开源开发人员都使用npm共享和借用软件包，许多组织也使用npm来管理私人开发。</p>
+    <content><![CDATA[<p>&emsp;&emsp;npm是JavaScript世界的包管理工具,并且是 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL3poLWNuLw==">NodeJs<i class="fa fa-external-link-alt"></i></span> 平台的默认包管理工具。来自各大洲的开源开发人员都使用npm共享和借用软件包，许多组织也使用npm来管理私人开发。</p>
 <span id="more"></span>
 
 <ul>
