@@ -46,11 +46,22 @@
   <entry>
     <title>Mac OS安装Python3整理</title>
     <url>/posts/be5d852.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;最新版本的Mac OS X，High Sierra， 自带Python 2.7。</p>
-<p>&emsp;&emsp;您不必安装和配置即可直接使用Python 2。本教程用来说明Python 3的安装。</p>
-<p>&emsp;&emsp;OS X自带的Python版本更适合用于学习而不是开发。因为版本与Python官网发布的 官方最新稳定版本 相比可能已经过时。</p>
+    <content><![CDATA[<p>&emsp;&emsp;Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p>
+<p>&emsp;&emsp;Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p>
 <span id="more"></span>
 
+<ul>
+<li><p>Python 是一种解释型语言： 这意味着开发过程中没有了编译这个环节。类似于PHP和Perl语言。</p>
+</li>
+<li><p>Python 是交互式语言： 这意味着，您可以在一个 Python 提示符 &gt;&gt;&gt; 后直接执行代码。</p>
+</li>
+<li><p>Python 是面向对象语言: 这意味着Python支持面向对象的风格或代码封装在对象的编程技术。</p>
+</li>
+</ul>
+<p>Python 是初学者的语言：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</p>
+<p>&emsp;&emsp;最新版本的Mac OS X，High Sierra， 自带Python 2.7。</p>
+<p>&emsp;&emsp;您不必安装和配置即可直接使用Python 2。本教程用来说明Python 3的安装。</p>
+<p>&emsp;&emsp;OS X自带的Python版本更适合用于学习而不是开发。因为版本与Python官网发布的 官方最新稳定版本 相比可能已经过时。</p>
 <h1 id="Let-s-do-it"><a href="#Let-s-do-it" class="headerlink" title="Let`s do it"></a>Let`s do it</h1><p>&emsp;&emsp;在正式安装之前，应先安装C编译器。最快的方式是运行 <code>xcode-select --install</code> 来安装Xcode命令行工具。 您也可以从Mac应用商店下载完全版的 <span class="exturl" data-url="aHR0cDovL2RldmVsb3Blci5hcHBsZS5jb20veGNvZGUv">Xcode<i class="fa fa-external-link-alt"></i></span>， 或者更轻巧的 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2tlbm5ldGhyZWl0ei9vc3gtZ2NjLWluc3RhbGxlciNyZWFkbWU=">OSX-GCC-Installer<i class="fa fa-external-link-alt"></i></span> 。</p>
 <div class="note info"><p> 注意<br><strong>如果</strong>已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</p>
 </div>
