@@ -35,7 +35,10 @@
 <p>如果你的电脑上没有nodejs,可以访问nodejs官网下载<a href="">安装并配置</a>。</p>
 </blockquote>
 <h3 id="查看npm版本"><a href="#查看npm版本" class="headerlink" title="查看npm版本"></a>查看<code>npm</code>版本</h3><figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> init</span><br></pre></td></tr></table></figure>
-<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v </span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v </span><br></pre></td></tr></table></figure>
+
+
+]]></content>
       <tags>
         <tag>命令</tag>
       </tags>
