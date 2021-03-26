@@ -58,7 +58,7 @@
 <li><p>Python 是面向对象语言: 这意味着Python支持面向对象的风格或代码封装在对象的编程技术。</p>
 </li>
 </ul>
-<p>Python 是初学者的语言：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</p>
+<p>&emsp;&emsp;Python 是初学者的语言：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</p>
 <p>&emsp;&emsp;最新版本的Mac OS X，High Sierra， 自带Python 2.7。</p>
 <p>&emsp;&emsp;您不必安装和配置即可直接使用Python 2。本教程用来说明Python 3的安装。</p>
 <p>&emsp;&emsp;OS X自带的Python版本更适合用于学习而不是开发。因为版本与Python官网发布的 官方最新稳定版本 相比可能已经过时。</p>
