@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>A picture</title>
-    <url>/posts/5d21f14b.html</url>
-    <content><![CDATA[<center>是大大的说撒 </center>
-![Edwardvoon](https://gitee.com/edwardvoon/hexooss/raw/aa5950b681f291c3aea2136aa515dd6b55107db8/uPic/WechatIMG1375.jpeg)
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/posts/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -25,5 +18,26 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>npm命令汇总整理</title>
+    <url>/posts/5d21f14b.html</url>
+    <content><![CDATA[<p>&emsp;&emsp;npm 是 JavaScript 世界的包管理工具,并且是 <a href="https://nodejs.org/zh-cn/">NodeJs</a> 平台的默认包管理工具。来自各大洲的开源开发人员都使用npm共享和借用软件包，许多组织也使用npm来管理私人开发。</p>
+<span id="more"></span>
+
+<ul>
+<li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li>
+<li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li>
+<li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。<br/></li>
+</ul>
+<p>&emsp;&emsp;使用该<a href="https://npmjs.com/">网站</a>发现软件包，设置配置文件以及管理您的npm体验的其他方面。例如，您可以设置<a href="https://www.npmjs.com/features">组织</a>来管理对公共或私有软件包的访问。</p>
+<blockquote>
+<p>如果你的电脑上没有nodejs,可以访问nodejs官网下载<a href="">安装并配置</a>。</p>
+</blockquote>
+<h3 id="查看npm版本"><a href="#查看npm版本" class="headerlink" title="查看npm版本"></a>查看<code>npm</code>版本</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm -v </span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>命令</tag>
+      </tags>
   </entry>
 </search>
