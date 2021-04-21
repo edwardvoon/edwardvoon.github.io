@@ -69,34 +69,34 @@ brew install python
 &emsp;&emsp;这将持续几分钟,然后，enjoy coding!
 
 # Pip
-Homebrew 会为您安装 `pip3` 
+&emsp;&emsp;Homebrew 会为您安装 `pip3` 
 
-`pip3` 是Homebrew版Python 3的 `pip` 的别名。
+&emsp;&emsp;`pip3` 是Homebrew版Python 3的 `pip` 的别名。
 
 # 使用Python 3
-这个时候，在您系统上Python 2.7是可用的。[Homebrew 版本的Python 2](https://pythonguidecn.readthedocs.io/zh/latest/starting/install/osx.html#install-osx) 和Python 3都安装了。
+&emsp;&emsp;这个时候，在您系统上Python 2.7是可用的。[Homebrew 版本的Python 2](https://pythonguidecn.readthedocs.io/zh/latest/starting/install/osx.html#install-osx) 和Python 3都安装了。
 
 ```
 python
 ```
 
-在终端输入上面的命令，将打开通过HomeBrew安装的Python解释器。
+&emsp;&emsp;在终端输入上面的命令，将打开通过HomeBrew安装的Python解释器。
 
 ```
 python2
 ```
 
-在终端输入上面的命令，将会打开使用Homebrew安装的Python 2解释器（如果有）。
+&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 2解释器（如果有）。
 
 ```
 python3
 ```
 
-在终端输入上面的命令，将会打开使用Homebrew安装的Python 3解释器（如果有）。
+&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 3解释器（如果有）。
 
-如果Homebrew版的Python 2安装了，`pip2` 指向Python 2。 如果Homebrew版的Python 3安装了，pip 指向Python 3。
+&emsp;&emsp;如果Homebrew版的Python 2安装了，`pip2` 指向Python 2。 如果Homebrew版的Python 3安装了，pip 指向Python 3。
 
-本指南的其余部分假定 python 指 Python 3。
+&emsp;&emsp;假定 python 指向 Python 3。
 
 ```
 # 我安装Python 3了吗？
@@ -104,12 +104,12 @@ python --version
 Python 3.6.4 Success!
 # If you still see 2.7 ensure in PATH /usr/local/bin/ takes pecedence over /usr/bin/
 ```
-
+&emsp;&emsp;如果在终端输入`python --version`返回的是python2的版本，不用迷惑，那是因为mac自带python。那么，如果想使用刚才安装的python3，[跟我来。](https://edwardvoon.github.io/posts/4a17b156.html)
 # Pipenv & 虚拟环境
-下一步安装 Pipenv，然后就可以安装依赖关系并管理虚拟环境。
+&emsp;&emsp;下一步安装 Pipenv，然后就可以安装依赖关系并管理虚拟环境。
 
-虚拟环境工具通过为不同项目创建专属的 Python 虚拟环境，以实现其依赖的库独立保存在不同的路径。 这解决了“项目X依赖于 1.x 版本，但项目 Y 需要 4.x”的难题，并且维持全局的 site-packages 目录干净、易管理。
+&emsp;&emsp;虚拟环境工具通过为不同项目创建专属的 Python 虚拟环境，以实现其依赖的库独立保存在不同的路径。 这解决了“项目X依赖于 1.x 版本，但项目 Y 需要 4.x”的难题，并且维持全局的 site-packages 目录干净、易管理。
 
-举个例子，通过这个工具可以实现依赖 Django 1.10 的项目与依赖 Django 1.8 的项目共存。
+&emsp;&emsp;举个例子，通过这个工具可以实现依赖 Django 1.10 的项目与依赖 Django 1.8 的项目共存。
 
-所以，向前！~~[进入到 Pipenv & 虚拟环境](#)~~ 文档中！
+&emsp;&emsp;所以，向前！~~[进入到 Pipenv & 虚拟环境](#)~~ 文档中！
