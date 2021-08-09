@@ -27,21 +27,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"edwardvoon.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="&amp;emsp;&amp;emsp;Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。 &amp;emsp;&amp;emsp;Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。">
+<meta name="description" content="&amp;emsp;&amp;emsp;一些Mac用户可能希望在其机器上禁用IPv6网络支持。这可能是希望的，以避免某些网络冲突，或增加用户在更高的威胁环境中的安全性，因为研究人员已经发现IPv6可能易受中间人和其他网络攻击的攻击。 &amp;emsp;&amp;emsp;虽然大多数用户不直接使用IPv6，但禁用IPv6并不是没有后果，因此只能由知道他们正在做什么的用户以及为什么这样做的用户来完成。一些核心OS X系统服务，如发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac OS安装Python3整理">
-<meta property="og:url" content="https://edwardvoon.github.io/posts/be5d852.html">
+<meta property="og:title" content="如何关闭MacOs ipv6">
+<meta property="og:url" content="https://edwardvoon.github.io/posts/6ac965e2.html">
 <meta property="og:site_name" content="Fantast">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。 &amp;emsp;&amp;emsp;Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;一些Mac用户可能希望在其机器上禁用IPv6网络支持。这可能是希望的，以避免某些网络冲突，或增加用户在更高的威胁环境中的安全性，因为研究人员已经发现IPv6可能易受中间人和其他网络攻击的攻击。 &amp;emsp;&amp;emsp;虽然大多数用户不直接使用IPv6，但禁用IPv6并不是没有后果，因此只能由知道他们正在做什么的用户以及为什么这样做的用户来完成。一些核心OS X系统服务，如发">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-26T13:26:38.000Z">
-<meta property="article:modified_time" content="2021-03-26T13:26:38.000Z">
+<meta property="article:published_time" content="2021-04-03T00:12:53.000Z">
+<meta property="article:modified_time" content="2021-04-03T00:12:53.000Z">
 <meta property="article:author" content="Edward voon">
 <meta property="article:tag" content="技术博客 前端开发">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://edwardvoon.github.io/posts/be5d852.html">
+<link rel="canonical" href="https://edwardvoon.github.io/posts/6ac965e2.html">
 
 
 <script class="page-configurations">
@@ -53,7 +53,7 @@
     lang   : 'en'
   };
 </script>
-<title>Mac OS安装Python3整理 | Fantast</title>
+<title>如何关闭MacOs ipv6 | Fantast</title>
   
     <script>
       function sendPageView() {
@@ -217,7 +217,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Let-s-do-it"><span class="nav-number">1.</span> <span class="nav-text">Let&#96;s do it</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Homebrew"><span class="nav-number">1.1.</span> <span class="nav-text">安装Homebrew</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEHomebrew"><span class="nav-number">1.2.</span> <span class="nav-text">配置Homebrew</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Python3"><span class="nav-number">1.3.</span> <span class="nav-text">安装Python3</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pip"><span class="nav-number">2.</span> <span class="nav-text">Pip</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Python-3"><span class="nav-number">3.</span> <span class="nav-text">使用Python 3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pipenv-amp-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">4.</span> <span class="nav-text">Pipenv &amp; 虚拟环境</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%93%E5%BC%80%E7%94%B5%E8%84%91%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">打开电脑的命令行工具</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -291,7 +291,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://edwardvoon.github.io/posts/be5d852.html">
+    <link itemprop="mainEntityOfPage" href="https://edwardvoon.github.io/posts/6ac965e2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -304,7 +304,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Mac OS安装Python3整理
+          如何关闭MacOs ipv6
         </h1>
 
         <div class="post-meta-container">
@@ -315,7 +315,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-03-26 21:26:38" itemprop="dateCreated datePublished" datetime="2021-03-26T21:26:38+08:00">2021-03-26</time>
+      <time title="Created: 2021-04-03 08:12:53" itemprop="dateCreated datePublished" datetime="2021-04-03T08:12:53+08:00">2021-04-03</time>
     </span>
 
   
@@ -328,61 +328,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>&emsp;&emsp;Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p>
-<p>&emsp;&emsp;Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p>
-<span id="more"></span>
-
-<ul>
-<li><p>Python 是一种解释型语言： 这意味着开发过程中没有了编译这个环节。类似于PHP和Perl语言。</p>
-</li>
-<li><p>Python 是交互式语言： 这意味着，您可以在一个 Python 提示符 &gt;&gt;&gt; 后直接执行代码。</p>
-</li>
-<li><p>Python 是面向对象语言: 这意味着Python支持面向对象的风格或代码封装在对象的编程技术。</p>
-</li>
-</ul>
-<p>&emsp;&emsp;Python 是初学者的语言：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</p>
-<p>&emsp;&emsp;最新版本的Mac OS X，High Sierra， 自带Python 2.7。</p>
-<p>&emsp;&emsp;您不必安装和配置即可直接使用Python 2。本教程用来说明Python 3的安装。</p>
-<p>&emsp;&emsp;OS X自带的Python版本更适合用于学习而不是开发。因为版本与Python官网发布的 官方最新稳定版本 相比可能已经过时。</p>
-<h1 id="Let-s-do-it"><a href="#Let-s-do-it" class="headerlink" title="Let`s do it"></a>Let`s do it</h1><p>&emsp;&emsp;在正式安装之前，应先安装C编译器。最快的方式是运行 <code>xcode-select --install</code> 来安装Xcode命令行工具。 您也可以从Mac应用商店下载完全版的 <span class="exturl" data-url="aHR0cDovL2RldmVsb3Blci5hcHBsZS5jb20veGNvZGUv">Xcode<i class="fa fa-external-link-alt"></i></span>， 或者更轻巧的 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2tlbm5ldGhyZWl0ei9vc3gtZ2NjLWluc3RhbGxlciNyZWFkbWU=">OSX-GCC-Installer<i class="fa fa-external-link-alt"></i></span> 。</p>
-<div class="note info"><p> 注意<br><strong>如果</strong>已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</p>
-</div>
-
-<div class="note info"><p> 注意<br><strong>执行</strong>Xcode的全新安装完成后，须在终端执行下述命令 xcode-select –install 来安装命令行工具。</p>
-</div>
-
-<h2 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h2><p>&emsp;&emsp;尽管OS X系统附带了大量Unix工具，熟悉Linux系统的人员使用时会发现缺少一个重要的组件——合适的包管理工具， <span class="exturl" data-url="aHR0cDovL2JyZXcuc2gv">Homebrew<i class="fa fa-external-link-alt"></i></span> 正好填补了这个空缺。</p>
-<p>&emsp;&emsp;<span class="exturl" data-url="aHR0cDovL2JyZXcuc2gvI2luc3RhbGw=">安装Homebrew<i class="fa fa-external-link-alt"></i></span>只需打开 终端 或个人常用的终端模拟器并运行：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e &quot;$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster/install)<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
-<h2 id="配置Homebrew"><a href="#配置Homebrew" class="headerlink" title="配置Homebrew"></a>配置Homebrew</h2><p>&emsp;&emsp;运行这段脚本将列出它会引起的改变，并在安装开始前提示您。 安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="string">&quot;/usr/local/opt/python/libexec/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;如果您使用的是 OS X 10.12（Sierra）或者更旧的系统，请使用如下命令</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">export PATH=<span class="regexp">/usr/</span>local<span class="regexp">/bin:/u</span>sr<span class="regexp">/local/</span>sbin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-<h2 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h2><p>&emsp;&emsp;接下来可以开始安装Python 3：</p>
-<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>python</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;这将持续几分钟,然后，enjoy coding!</p>
-<h1 id="Pip"><a href="#Pip" class="headerlink" title="Pip"></a>Pip</h1><p>&emsp;&emsp;Homebrew 会为您安装 <code>pip3</code> </p>
-<p>&emsp;&emsp;<code>pip3</code> 是Homebrew版Python 3的 <code>pip</code> 的别名。</p>
-<h1 id="使用Python-3"><a href="#使用Python-3" class="headerlink" title="使用Python 3"></a>使用Python 3</h1><p>&emsp;&emsp;这个时候，在您系统上Python 2.7是可用的。<span class="exturl" data-url="aHR0cHM6Ly9weXRob25ndWlkZWNuLnJlYWR0aGVkb2NzLmlvL3poL2xhdGVzdC9zdGFydGluZy9pbnN0YWxsL29zeC5odG1sI2luc3RhbGwtb3N4">Homebrew 版本的Python 2<i class="fa fa-external-link-alt"></i></span> 和Python 3都安装了。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">python</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;在终端输入上面的命令，将打开通过HomeBrew安装的Python解释器。</p>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">pytho<span class="symbol">n2</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 2解释器（如果有）。</p>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">pytho<span class="symbol">n3</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 3解释器（如果有）。</p>
-<p>&emsp;&emsp;如果Homebrew版的Python 2安装了，<code>pip2</code> 指向Python 2。 如果Homebrew版的Python 3安装了，pip 指向Python 3。</p>
-<p>&emsp;&emsp;假定 python 指向 Python 3。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 我安装Python 3了吗？</span></span><br><span class="line"><span class="attribute">python</span> --version</span><br><span class="line"><span class="attribute">Python</span> <span class="number">3</span>.<span class="number">6</span>.<span class="number">4</span> Success!</span><br><span class="line"><span class="comment"># If you still see 2.7 ensure in PATH /usr/local/bin/ takes pecedence over /usr/bin/</span></span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;如果在终端输入<code>python --version</code>返回的是python2的版本，不用迷惑，那是因为mac自带python。那么，如果想使用刚才安装的python3，<a href="https://edwardvoon.github.io/posts/4a17b156.html">跟我来。</a></p>
-<h1 id="Pipenv-amp-虚拟环境"><a href="#Pipenv-amp-虚拟环境" class="headerlink" title="Pipenv &amp; 虚拟环境"></a>Pipenv &amp; 虚拟环境</h1><p>&emsp;&emsp;下一步安装 Pipenv，然后就可以安装依赖关系并管理虚拟环境。</p>
-<p>&emsp;&emsp;虚拟环境工具通过为不同项目创建专属的 Python 虚拟环境，以实现其依赖的库独立保存在不同的路径。 这解决了“项目X依赖于 1.x 版本，但项目 Y 需要 4.x”的难题，并且维持全局的 site-packages 目录干净、易管理。</p>
-<p>&emsp;&emsp;举个例子，通过这个工具可以实现依赖 Django 1.10 的项目与依赖 Django 1.8 的项目共存。</p>
-<p>&emsp;&emsp;所以，向前！<del><a href="#">进入到 Pipenv &amp; 虚拟环境</a></del> 文档中！</p>
+        <p>&emsp;&emsp;一些Mac用户可能希望在其机器上禁用IPv6网络支持。这可能是希望的，以避免某些网络冲突，或增加用户在更高的威胁环境中的安全性，因为研究人员已经发现IPv6可能易受中间人和其他网络攻击的攻击。</p>
+<p>&emsp;&emsp;虽然大多数用户不直接使用IPv6，但禁用IPv6并不是没有后果，因此只能由知道他们正在做什么的用户以及为什么这样做的用户来完成。一些核心OS X系统服务，如发现服务Bonjour，使用IPv6.因此，禁用IPv6可能会导致AirDrop共享不可用，某些打印服务将变得不可用，并且某些其他方便的Mac功能也可能无法使用。这使得禁用许多人不切实际。</p>
+<p>&emsp;&emsp;OS X提供了几种关闭IPv6的方法，并且很好地介绍了使用命令行的简单方法，以及如果您确定需要，将演示如何重新启动IPv6.用户还可以通过“系统偏好设置”来检查IPv6是否被主动使用，哪个Mac OS X默认进入自动状态。</p>
+<p>&emsp;&emsp;下面就说下关闭macOs ipv6的具体操作步骤</p>
+<h3 id="打开电脑的命令行工具"><a href="#打开电脑的命令行工具" class="headerlink" title="打开电脑的命令行工具"></a>打开电脑的命令行工具</h3><p>输入命令 <code>networksetup -listnetworkserviceorder</code>,以查找电脑上已经存在的网络服务，如下图：</p>
+<p>&emsp;&emsp;</p>
 
     </div>
 
@@ -400,7 +351,7 @@
   </li>
   <li class="post-copyright-link">
       Post link: 
-      <a href="https://edwardvoon.github.io/posts/be5d852.html" title="Mac OS安装Python3整理">https://edwardvoon.github.io/posts/be5d852.html</a>
+      <a href="https://edwardvoon.github.io/posts/6ac965e2.html" title="如何关闭MacOs ipv6">https://edwardvoon.github.io/posts/6ac965e2.html</a>
   </li>
   <li class="post-copyright-license">
     Copyright Notice: All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1IYW5z"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
@@ -413,13 +364,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/5d21f14b.html" rel="prev" title="npm命令汇总整理">
-                  <i class="fa fa-chevron-left"></i> npm命令汇总整理
+                <a href="/posts/be5d852.html" rel="prev" title="Mac OS安装Python3整理">
+                  <i class="fa fa-chevron-left"></i> Mac OS安装Python3整理
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/6ac965e2.html" rel="next" title="如何关闭MacOs ipv6">
-                  如何关闭MacOs ipv6 <i class="fa fa-chevron-right"></i>
+                <a href="/posts/4a17b156.html" rel="next" title="设置python默认版本(MAC)">
+                  设置python默认版本(MAC) <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -520,7 +471,7 @@
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://edwardvoon.github.io/posts/be5d852.html',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://edwardvoon.github.io/posts/6ac965e2.html',]
       });
       });
   </script>

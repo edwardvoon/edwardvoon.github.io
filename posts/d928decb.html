@@ -1,115 +1,481 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>npm命令汇总整理</title>
-    <url>/posts/5d21f14b.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;npm是JavaScript世界的包管理工具,并且是 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL3poLWNuLw==">NodeJs<i class="fa fa-external-link-alt"></i></span> 平台的默认包管理工具。来自各大洲的开源开发人员都使用npm共享和借用软件包，许多组织也使用npm来管理私人开发。</p>
-<span id="more"></span>
-
-<ul>
-<li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li>
-<li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li>
-<li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。<br/></li>
-</ul>
-<p>&emsp;&emsp;使用该<span class="exturl" data-url="aHR0cHM6Ly9ucG1qcy5jb20v">网站<i class="fa fa-external-link-alt"></i></span>发现软件包，设置配置文件以及管理您的npm体验的其他方面。例如，您可以设置<span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL2ZlYXR1cmVz">组织<i class="fa fa-external-link-alt"></i></span>来管理对公共或私有软件包的访问。</p>
-<blockquote>
-<p>如果你的电脑上没有nodejs,可以访问nodejs官网下载<a href="">安装并配置</a>。</p>
-</blockquote>
-<h3 id="查看npm版本"><a href="#查看npm版本" class="headerlink" title="查看npm版本"></a>查看<code>npm</code>版本</h3><figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> init</span><br></pre></td></tr></table></figure>
-<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v </span><br></pre></td></tr></table></figure>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
 
 
-]]></content>
-      <tags>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac OS安装Python3整理</title>
-    <url>/posts/be5d852.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p>
-<p>&emsp;&emsp;Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p>
-<span id="more"></span>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="TTH4AH7zSJis5iLphiFOoB8yzcJfGsQU1amp86RFKk0">
+  <meta name="baidu-site-verification" content="code-bkyH1wkOiH">
 
-<ul>
-<li><p>Python 是一种解释型语言： 这意味着开发过程中没有了编译这个环节。类似于PHP和Perl语言。</p>
-</li>
-<li><p>Python 是交互式语言： 这意味着，您可以在一个 Python 提示符 &gt;&gt;&gt; 后直接执行代码。</p>
-</li>
-<li><p>Python 是面向对象语言: 这意味着Python支持面向对象的风格或代码封装在对象的编程技术。</p>
-</li>
-</ul>
-<p>&emsp;&emsp;Python 是初学者的语言：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</p>
-<p>&emsp;&emsp;最新版本的Mac OS X，High Sierra， 自带Python 2.7。</p>
-<p>&emsp;&emsp;您不必安装和配置即可直接使用Python 2。本教程用来说明Python 3的安装。</p>
-<p>&emsp;&emsp;OS X自带的Python版本更适合用于学习而不是开发。因为版本与Python官网发布的 官方最新稳定版本 相比可能已经过时。</p>
-<h1 id="Let-s-do-it"><a href="#Let-s-do-it" class="headerlink" title="Let`s do it"></a>Let`s do it</h1><p>&emsp;&emsp;在正式安装之前，应先安装C编译器。最快的方式是运行 <code>xcode-select --install</code> 来安装Xcode命令行工具。 您也可以从Mac应用商店下载完全版的 <span class="exturl" data-url="aHR0cDovL2RldmVsb3Blci5hcHBsZS5jb20veGNvZGUv">Xcode<i class="fa fa-external-link-alt"></i></span>， 或者更轻巧的 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2tlbm5ldGhyZWl0ei9vc3gtZ2NjLWluc3RhbGxlciNyZWFkbWU=">OSX-GCC-Installer<i class="fa fa-external-link-alt"></i></span> 。</p>
-<div class="note info"><p> 注意<br><strong>如果</strong>已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</p>
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"edwardvoon.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="第1章 准备工作1.1 本书的内容本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。 什么样的数据？当书中出现“数据”时，究竟指的是什么呢？主">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python数据分析-自用">
+<meta property="og:url" content="https://edwardvoon.github.io/posts/d928decb.html">
+<meta property="og:site_name" content="Fantast">
+<meta property="og:description" content="第1章 准备工作1.1 本书的内容本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。 什么样的数据？当书中出现“数据”时，究竟指的是什么呢？主">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c76c4f40777d3ef1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-86a6813291ead445.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-bc9a0b4c30363747.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-8188b0386238c16a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-9ed3866ea25c11f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-e179f5ea00e50691.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c72b11add9b8ccf8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3ab3738a92a15486.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3e3a8c6b9c5040fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-9fb5f25b33166acf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-27a30ac3e7d262a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-100f9a20c1536553.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-522e2b688b755ff3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-980efe5d98ecc4d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-111823d8767a104d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-28274484129f0ea7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-d25bd6e730afeb39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-78ab11f67e7077a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-2f2d7406a8bc076c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-5cc31115615737b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-0a641536f73f560e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-9da32d2f4629c304.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-1d494e73b61c7ced.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-2be79faf68ab6ff8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4e38d02a66481530.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-eff1e61e5464159f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-236dba83b6a420cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3b22000d4cd38650.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-a6c6df3ca8e0b98e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-866fcde885b1d357.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-80e85ae6b9c89ada.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-dcdb66e49e5f70ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-97ba09c96dab93a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-6ed04fae3d1178e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-0833621694f6dda0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-106835b28c0cea5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-5499d14f0e2cd639.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-efa3dbd4b83c61ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-64354f2ab777bd8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-16857a1021f98d1f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7edfab5b4a147581.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-af35e3809278410e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-11fa967f658ac314.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b53c4a9d65a2db32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-958f849e6067b19b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-082daf4a00ed9494.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-f2bcc0a703c7236f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-597327ade3e94c7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7a1cee622459072b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-1a0f73e5bb26ea21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-0bf235386a64c3b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4edd39e68f4dc530.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-087fe67bf6db0701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-d1f0d4ed3e895016.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-efbb80a793759fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-a634364ed6d5d5c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-e49b3341f4a3c90e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-35ca716a4f1b8475.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c86672e733ceccd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-339436563b519415.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7032e333a6ecdd37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b8cff158e64eae74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7bcbd5e56fdbbd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-2297bcaf355db24c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-88bb55faca7d01ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-80be7ffc3dec88a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-404d816f3e1d6621.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3ec7642e1a592f08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-caf9300dacb61fa4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-741f968323bd818f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-651ff89750c0a89b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3127eaa51f5e4c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-1f8a3d7a3a02d7d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4bee796bf7262423.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-f28e5ab2ac94c7a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-6d9fbf863c09370a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-44e50562aeb5eb49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-a1234d5e5ee41a40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-96651ecaa90f1c68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-cd54c7ccfa3f0687.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-bfc141acb37d99b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c19e4246eb897978.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-2918f67936823834.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c33e8b3add99904b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-06abe2f070222115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-255279376f7649a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-ee929d033159516a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-975f04d750c4efe2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-2133d20739478a80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-20aa530a44e06f61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-737ba19a0cbdd46f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4e52192441c609f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-356fb27a7c658920.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-e5c671e09ecf94be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-ba8de524e08b1b6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7e8bb217f599b4ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c9e01844c4803a42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4af261a305a70aeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-50c751823754df58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-de0181e1f6b45eaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-cf0119398273e2b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c8614ddbd10793ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-8da46ba96544b071.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3ca410609195edc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-ff139312cd972204.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-adfa57a998c0296e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-d09e577a10d0e6eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-d201200d0e65676f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-e2e1d52c9766f6ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b40a57086c904e83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7a77f47844f2ee8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-3327483eab730b09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-15f565bed1ccad09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-979f748052b2279f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-dae48defe3749fad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-e81e0f602b4db0ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-0a54a028a62b9b50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-af49e84a90c23c1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-6c602152c2bba658.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-aa267c1d399a78f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-053612a5655b68d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-60ee355801daf412.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-7643b150d88aae11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-33f0f97656367a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-63e1ddc326a033b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-574b53a383cad681.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-67686f38e66ef5f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-51c431b2490424c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b99d98f8bb5fc695.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-99b176d022a444c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-d2254e547c6ce537.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-77e8c8d3c784692b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-43452f2f413e5094.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b8996bf943a06ab9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-95bbca6d8d04e4c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-f486e7c41d7e0eec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c597246722a6bb01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-6aaf022ab88452a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-fcaba8455960862a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-9b0310d6773c3d38.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-965eb28b60046cd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-b40936aab8e757d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-c997bd45000f7b72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-970f54f58b6b3356.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-4da7ee14be2da211.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7178691-90a4b17e20b5b03a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2021-08-09T00:42:25.000Z">
+<meta property="article:modified_time" content="2021-08-09T00:42:25.000Z">
+<meta property="article:author" content="Edward voon">
+<meta property="article:tag" content="技术博客 前端开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7178691-c76c4f40777d3ef1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+<link rel="canonical" href="https://edwardvoon.github.io/posts/d928decb.html">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+<title>Python数据分析-自用 | Fantast</title>
+  
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'j1ZqHGZpRq62FO7tDTJxcQ',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?80ba059447fe41061a9f6c9e77c9972c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Fantast</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Let the dream is no longer a dream</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
 
-<div class="note info"><p> 注意<br><strong>执行</strong>Xcode的全新安装完成后，须在终端执行下述命令 xcode-select –install 来安装命令行工具。</p>
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
 </div>
 
-<h2 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h2><p>&emsp;&emsp;尽管OS X系统附带了大量Unix工具，熟悉Linux系统的人员使用时会发现缺少一个重要的组件——合适的包管理工具， <span class="exturl" data-url="aHR0cDovL2JyZXcuc2gv">Homebrew<i class="fa fa-external-link-alt"></i></span> 正好填补了这个空缺。</p>
-<p>&emsp;&emsp;<span class="exturl" data-url="aHR0cDovL2JyZXcuc2gvI2luc3RhbGw=">安装Homebrew<i class="fa fa-external-link-alt"></i></span>只需打开 终端 或个人常用的终端模拟器并运行：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e &quot;$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster/install)<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
-<h2 id="配置Homebrew"><a href="#配置Homebrew" class="headerlink" title="配置Homebrew"></a>配置Homebrew</h2><p>&emsp;&emsp;运行这段脚本将列出它会引起的改变，并在安装开始前提示您。 安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="string">&quot;/usr/local/opt/python/libexec/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure>
+    </div>
+  </div>
 
-<p>&emsp;&emsp;如果您使用的是 OS X 10.12（Sierra）或者更旧的系统，请使用如下命令</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">export PATH=<span class="regexp">/usr/</span>local<span class="regexp">/bin:/u</span>sr<span class="regexp">/local/</span>sbin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-<h2 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h2><p>&emsp;&emsp;接下来可以开始安装Python 3：</p>
-<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>python</span><br></pre></td></tr></table></figure>
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
 
-<p>&emsp;&emsp;这将持续几分钟,然后，enjoy coding!</p>
-<h1 id="Pip"><a href="#Pip" class="headerlink" title="Pip"></a>Pip</h1><p>&emsp;&emsp;Homebrew 会为您安装 <code>pip3</code> </p>
-<p>&emsp;&emsp;<code>pip3</code> 是Homebrew版Python 3的 <code>pip</code> 的别名。</p>
-<h1 id="使用Python-3"><a href="#使用Python-3" class="headerlink" title="使用Python 3"></a>使用Python 3</h1><p>&emsp;&emsp;这个时候，在您系统上Python 2.7是可用的。<span class="exturl" data-url="aHR0cHM6Ly9weXRob25ndWlkZWNuLnJlYWR0aGVkb2NzLmlvL3poL2xhdGVzdC9zdGFydGluZy9pbnN0YWxsL29zeC5odG1sI2luc3RhbGwtb3N4">Homebrew 版本的Python 2<i class="fa fa-external-link-alt"></i></span> 和Python 3都安装了。</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">python</span></span><br></pre></td></tr></table></figure>
+  <aside class="sidebar">
 
-<p>&emsp;&emsp;在终端输入上面的命令，将打开通过HomeBrew安装的Python解释器。</p>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">pytho<span class="symbol">n2</span></span><br></pre></td></tr></table></figure>
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-<p>&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 2解释器（如果有）。</p>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">pytho<span class="symbol">n3</span></span><br></pre></td></tr></table></figure>
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">第1章 准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E6%9C%AC%E4%B9%A6%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 本书的内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">什么样的数据？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8Python%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 为什么要使用Python进行数据分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python%E4%BD%9C%E4%B8%BA%E8%83%B6%E6%B0%B4%E8%AF%AD%E8%A8%80"><span class="nav-number">1.2.1.</span> <span class="nav-text">Python作为胶水语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E2%80%9C%E4%B8%A4%E7%A7%8D%E8%AF%AD%E8%A8%80%E2%80%9D%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.2.</span> <span class="nav-text">解决“两种语言”问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E9%80%89Python"><span class="nav-number">1.2.3.</span> <span class="nav-text">为什么不选Python</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E9%87%8D%E8%A6%81%E7%9A%84Python%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 重要的Python库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NumPy"><span class="nav-number">1.3.1.</span> <span class="nav-text">NumPy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pandas"><span class="nav-number">1.3.2.</span> <span class="nav-text">pandas</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#matplotlib"><span class="nav-number">1.3.3.</span> <span class="nav-text">matplotlib</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IPython%E5%92%8CJupyter"><span class="nav-number">1.3.4.</span> <span class="nav-text">IPython和Jupyter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SciPy"><span class="nav-number">1.3.5.</span> <span class="nav-text">SciPy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scikit-learn"><span class="nav-number">1.3.6.</span> <span class="nav-text">scikit-learn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#statsmodels"><span class="nav-number">1.3.7.</span> <span class="nav-text">statsmodels</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E5%AE%89%E8%A3%85%E5%92%8C%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 安装和设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows"><span class="nav-number">1.4.1.</span> <span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple-OS-X-macOS"><span class="nav-number">1.4.2.</span> <span class="nav-text">Apple (OS X, macOS)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GNU-Linux"><span class="nav-number">1.4.3.</span> <span class="nav-text">GNU&#x2F;Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%88%96%E5%8D%87%E7%BA%A7Python%E5%8C%85"><span class="nav-number">1.4.4.</span> <span class="nav-text">安装或升级Python包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%EF%BC%88IDEs%EF%BC%89%E5%92%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">1.4.5.</span> <span class="nav-text">集成开发环境（IDEs）和文本编辑器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-%E7%A4%BE%E5%8C%BA%E5%92%8C%E4%BC%9A%E8%AE%AE"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 社区和会议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-%E6%9C%AC%E4%B9%A6%E5%AF%BC%E8%88%AA"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 本书导航</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.6.1.</span> <span class="nav-text">代码示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%E6%95%B0%E6%8D%AE"><span class="nav-number">1.6.2.</span> <span class="nav-text">示例数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5%E6%83%AF%E4%BE%8B"><span class="nav-number">1.6.3.</span> <span class="nav-text">引入惯例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E8%AF%9D"><span class="nav-number">1.6.4.</span> <span class="nav-text">行话</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-Python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%EF%BC%8CIPython%E5%92%8CJupyter-Notebooks"><span class="nav-number">2.</span> <span class="nav-text">第2章 Python语法基础，IPython和Jupyter Notebooks</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Python%E8%A7%A3%E9%87%8A%E5%99%A8"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Python解释器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-IPython%E5%9F%BA%E7%A1%80"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 IPython基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8CIPython-Shell"><span class="nav-number">2.2.1.</span> <span class="nav-text">运行IPython Shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8CJupyter-Notebook"><span class="nav-number">2.2.2.</span> <span class="nav-text">运行Jupyter Notebook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab%E8%A1%A5%E5%85%A8"><span class="nav-number">2.2.3.</span> <span class="nav-text">Tab补全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E7%9C%81"><span class="nav-number">2.2.4.</span> <span class="nav-text">自省</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.5.</span> <span class="nav-text">%run命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E6%96%AD%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="nav-number">2.2.6.</span> <span class="nav-text">中断运行的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E5%89%AA%E8%B4%B4%E6%9D%BF%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.2.7.</span> <span class="nav-text">从剪贴板执行程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.2.8.</span> <span class="nav-text">键盘快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.9.</span> <span class="nav-text">魔术命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E6%88%90Matplotlib"><span class="nav-number">2.2.10.</span> <span class="nav-text">集成Matplotlib</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-Python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 Python语法基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AF%AD%E4%B9%89"><span class="nav-number">2.3.1.</span> <span class="nav-text">语言的语义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%BC%A9%E8%BF%9B%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E6%8B%AC%E5%8F%B7"><span class="nav-number">2.3.2.</span> <span class="nav-text">使用缩进，而不是括号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.3.3.</span> <span class="nav-text">万物皆对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">2.3.4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%92%8C%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8"><span class="nav-number">2.3.5.</span> <span class="nav-text">函数和对象方法调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%92%8C%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="nav-number">2.3.6.</span> <span class="nav-text">变量和参数传递</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%BC%95%E7%94%A8%EF%BC%8C%E5%BC%BA%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.7.</span> <span class="nav-text">动态引用，强类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95"><span class="nav-number">2.3.8.</span> <span class="nav-text">属性和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.9.</span> <span class="nav-text">鸭子类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5"><span class="nav-number">2.3.10.</span> <span class="nav-text">引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">2.3.11.</span> <span class="nav-text">二元运算符和比较运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E5%8F%98%E4%B8%8E%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.3.12.</span> <span class="nav-text">可变与不可变对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E9%87%8F%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.13.</span> <span class="nav-text">标量类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.14.</span> <span class="nav-text">数值类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">2.3.15.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E8%8A%82%E5%92%8CUnicode"><span class="nav-number">2.3.16.</span> <span class="nav-text">字节和Unicode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%80%BC"><span class="nav-number">2.3.17.</span> <span class="nav-text">布尔值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">2.3.18.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#None"><span class="nav-number">2.3.19.</span> <span class="nav-text">None</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.20.</span> <span class="nav-text">日期和时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E6%B5%81"><span class="nav-number">2.3.21.</span> <span class="nav-text">控制流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#if%E3%80%81elif%E5%92%8Celse"><span class="nav-number">2.3.22.</span> <span class="nav-text">if、elif和else</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.3.23.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#While%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.3.24.</span> <span class="nav-text">While循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pass"><span class="nav-number">2.3.25.</span> <span class="nav-text">pass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#range"><span class="nav-number">2.3.26.</span> <span class="nav-text">range</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E5%85%83%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.3.27.</span> <span class="nav-text">三元表达式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0-Python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%81%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">第3章 Python的数据结构、函数和文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-1-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E5%BA%8F%E5%88%97"><span class="nav-number">4.</span> <span class="nav-text">3.1 数据结构和序列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%83%E7%BB%84"><span class="nav-number">4.1.</span> <span class="nav-text">元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%86%E5%88%86%E5%85%83%E7%BB%84"><span class="nav-number">4.2.</span> <span class="nav-text">拆分元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tuple%E6%96%B9%E6%B3%95"><span class="nav-number">4.3.</span> <span class="nav-text">tuple方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">4.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%92%8C%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0"><span class="nav-number">4.5.</span> <span class="nav-text">添加和删除元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%B2%E8%81%94%E5%92%8C%E7%BB%84%E5%90%88%E5%88%97%E8%A1%A8"><span class="nav-number">4.6.</span> <span class="nav-text">串联和组合列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">4.7.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E5%92%8C%E7%BB%B4%E6%8A%A4%E5%B7%B2%E6%8E%92%E5%BA%8F%E7%9A%84%E5%88%97%E8%A1%A8"><span class="nav-number">4.8.</span> <span class="nav-text">二分搜索和维护已排序的列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E7%89%87"><span class="nav-number">4.9.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E5%88%97%E5%87%BD%E6%95%B0"><span class="nav-number">4.10.</span> <span class="nav-text">序列函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enumerate%E5%87%BD%E6%95%B0"><span class="nav-number">4.11.</span> <span class="nav-text">enumerate函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sorted%E5%87%BD%E6%95%B0"><span class="nav-number">4.12.</span> <span class="nav-text">sorted函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip%E5%87%BD%E6%95%B0"><span class="nav-number">4.13.</span> <span class="nav-text">zip函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reversed%E5%87%BD%E6%95%B0"><span class="nav-number">4.14.</span> <span class="nav-text">reversed函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E5%85%B8"><span class="nav-number">4.15.</span> <span class="nav-text">字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E5%BA%8F%E5%88%97%E5%88%9B%E5%BB%BA%E5%AD%97%E5%85%B8"><span class="nav-number">4.16.</span> <span class="nav-text">用序列创建字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="nav-number">4.17.</span> <span class="nav-text">默认值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E7%9A%84%E9%94%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">4.18.</span> <span class="nav-text">有效的键类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">4.19.</span> <span class="nav-text">集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E3%80%81%E9%9B%86%E5%90%88%E5%92%8C%E5%AD%97%E5%85%B8%E6%8E%A8%E5%AF%BC%E5%BC%8F"><span class="nav-number">4.20.</span> <span class="nav-text">列表、集合和字典推导式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F"><span class="nav-number">4.21.</span> <span class="nav-text">嵌套列表推导式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-%E5%87%BD%E6%95%B0"><span class="nav-number">5.</span> <span class="nav-text">3.2 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%8C%E5%92%8C%E5%B1%80%E9%83%A8%E5%87%BD%E6%95%B0"><span class="nav-number">5.1.</span> <span class="nav-text">命名空间、作用域，和局部函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E5%A4%9A%E4%B8%AA%E5%80%BC"><span class="nav-number">5.2.</span> <span class="nav-text">返回多个值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E4%B9%9F%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="nav-number">5.3.</span> <span class="nav-text">函数也是对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%BF%E5%90%8D%EF%BC%88lambda%EF%BC%89%E5%87%BD%E6%95%B0"><span class="nav-number">5.4.</span> <span class="nav-text">匿名（lambda）函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%AF%E9%87%8C%E5%8C%96%EF%BC%9A%E9%83%A8%E5%88%86%E5%8F%82%E6%95%B0%E5%BA%94%E7%94%A8"><span class="nav-number">5.5.</span> <span class="nav-text">柯里化：部分参数应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">5.6.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%99%A8%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">5.7.</span> <span class="nav-text">生成器表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools%E6%A8%A1%E5%9D%97"><span class="nav-number">5.8.</span> <span class="nav-text">itertools模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%94%99%E8%AF%AF%E5%92%8C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">5.9.</span> <span class="nav-text">错误和异常处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IPython%E7%9A%84%E5%BC%82%E5%B8%B8"><span class="nav-number">5.10.</span> <span class="nav-text">IPython的异常</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-%E6%96%87%E4%BB%B6%E5%92%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">6.</span> <span class="nav-text">3.3 文件和操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E5%AD%97%E8%8A%82%E5%92%8CUnicode"><span class="nav-number">6.1.</span> <span class="nav-text">文件的字节和Unicode</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-%E7%BB%93%E8%AE%BA"><span class="nav-number">7.</span> <span class="nav-text">3.4 结论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC04%E7%AB%A0-NumPy%E5%9F%BA%E7%A1%80%EF%BC%9A%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97"><span class="nav-number">8.</span> <span class="nav-text">第04章 NumPy基础：数组和矢量计算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-NumPy%E7%9A%84ndarray%EF%BC%9A%E4%B8%80%E7%A7%8D%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1"><span class="nav-number">9.</span> <span class="nav-text">4.1 NumPy的ndarray：一种多维数组对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAndarray"><span class="nav-number">9.1.</span> <span class="nav-text">创建ndarray</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ndarray%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">9.2.</span> <span class="nav-text">ndarray的数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NumPy%E6%95%B0%E7%BB%84%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-number">9.3.</span> <span class="nav-text">NumPy数组的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E7%B4%A2%E5%BC%95%E5%92%8C%E5%88%87%E7%89%87"><span class="nav-number">9.4.</span> <span class="nav-text">基本的索引和切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E7%89%87%E7%B4%A2%E5%BC%95"><span class="nav-number">9.5.</span> <span class="nav-text">切片索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%9E%8B%E7%B4%A2%E5%BC%95"><span class="nav-number">9.6.</span> <span class="nav-text">布尔型索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8A%B1%E5%BC%8F%E7%B4%A2%E5%BC%95"><span class="nav-number">9.7.</span> <span class="nav-text">花式索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E8%BD%AC%E7%BD%AE%E5%92%8C%E8%BD%B4%E5%AF%B9%E6%8D%A2"><span class="nav-number">9.8.</span> <span class="nav-text">数组转置和轴对换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-2-%E9%80%9A%E7%94%A8%E5%87%BD%E6%95%B0%EF%BC%9A%E5%BF%AB%E9%80%9F%E7%9A%84%E5%85%83%E7%B4%A0%E7%BA%A7%E6%95%B0%E7%BB%84%E5%87%BD%E6%95%B0"><span class="nav-number">10.</span> <span class="nav-text">4.2 通用函数：快速的元素级数组函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-3-%E5%88%A9%E7%94%A8%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="nav-number">11.</span> <span class="nav-text">4.3 利用数组进行数据处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E6%9D%A1%E4%BB%B6%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BF%B0%E4%B8%BA%E6%95%B0%E7%BB%84%E8%BF%90%E7%AE%97"><span class="nav-number">11.1.</span> <span class="nav-text">将条件逻辑表述为数组运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%92%8C%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-number">11.2.</span> <span class="nav-text">数学和统计方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E4%BA%8E%E5%B8%83%E5%B0%94%E5%9E%8B%E6%95%B0%E7%BB%84%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">11.3.</span> <span class="nav-text">用于布尔型数组的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F-1"><span class="nav-number">11.4.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E4%B8%80%E5%8C%96%E4%BB%A5%E5%8F%8A%E5%85%B6%E5%AE%83%E7%9A%84%E9%9B%86%E5%90%88%E9%80%BB%E8%BE%91"><span class="nav-number">11.5.</span> <span class="nav-text">唯一化以及其它的集合逻辑</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-4-%E7%94%A8%E4%BA%8E%E6%95%B0%E7%BB%84%E7%9A%84%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">12.</span> <span class="nav-text">4.4 用于数组的文件输入输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-5-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0"><span class="nav-number">13.</span> <span class="nav-text">4.5 线性代数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-6-%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90"><span class="nav-number">14.</span> <span class="nav-text">4.6 伪随机数生成</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-7-%E7%A4%BA%E4%BE%8B%EF%BC%9A%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5"><span class="nav-number">15.</span> <span class="nav-text">4.7 示例：随机漫步</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E6%AC%A1%E6%A8%A1%E6%8B%9F%E5%A4%9A%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5"><span class="nav-number">15.1.</span> <span class="nav-text">一次模拟多个随机漫步</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-8-%E7%BB%93%E8%AE%BA"><span class="nav-number">16.</span> <span class="nav-text">4.8 结论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC05%E7%AB%A0-pandas%E5%85%A5%E9%97%A8"><span class="nav-number">17.</span> <span class="nav-text">第05章 pandas入门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-1-pandas%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D"><span class="nav-number">18.</span> <span class="nav-text">5.1 pandas的数据结构介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Series"><span class="nav-number">18.1.</span> <span class="nav-text">Series</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DataFrame"><span class="nav-number">18.2.</span> <span class="nav-text">DataFrame</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E5%AF%B9%E8%B1%A1"><span class="nav-number">18.3.</span> <span class="nav-text">索引对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-2-%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">19.</span> <span class="nav-text">5.2 基本功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E7%B4%A2%E5%BC%95"><span class="nav-number">19.1.</span> <span class="nav-text">重新索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A2%E5%BC%83%E6%8C%87%E5%AE%9A%E8%BD%B4%E4%B8%8A%E7%9A%84%E9%A1%B9"><span class="nav-number">19.2.</span> <span class="nav-text">丢弃指定轴上的项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E3%80%81%E9%80%89%E5%8F%96%E5%92%8C%E8%BF%87%E6%BB%A4"><span class="nav-number">19.3.</span> <span class="nav-text">索引、选取和过滤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8loc%E5%92%8Ciloc%E8%BF%9B%E8%A1%8C%E9%80%89%E5%8F%96"><span class="nav-number">19.4.</span> <span class="nav-text">用loc和iloc进行选取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E7%B4%A2%E5%BC%95"><span class="nav-number">19.5.</span> <span class="nav-text">整数索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E5%92%8C%E6%95%B0%E6%8D%AE%E5%AF%B9%E9%BD%90"><span class="nav-number">19.6.</span> <span class="nav-text">算术运算和数据对齐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E7%AE%97%E6%9C%AF%E6%96%B9%E6%B3%95%E4%B8%AD%E5%A1%AB%E5%85%85%E5%80%BC"><span class="nav-number">19.7.</span> <span class="nav-text">在算术方法中填充值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DataFrame%E5%92%8CSeries%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-number">19.8.</span> <span class="nav-text">DataFrame和Series之间的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8%E5%92%8C%E6%98%A0%E5%B0%84"><span class="nav-number">19.9.</span> <span class="nav-text">函数应用和映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E5%92%8C%E6%8E%92%E5%90%8D"><span class="nav-number">19.10.</span> <span class="nav-text">排序和排名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%A6%E6%9C%89%E9%87%8D%E5%A4%8D%E6%A0%87%E7%AD%BE%E7%9A%84%E8%BD%B4%E7%B4%A2%E5%BC%95"><span class="nav-number">19.11.</span> <span class="nav-text">带有重复标签的轴索引</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-3-%E6%B1%87%E6%80%BB%E5%92%8C%E8%AE%A1%E7%AE%97%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1"><span class="nav-number">20.</span> <span class="nav-text">5.3 汇总和计算描述统计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E4%B8%8E%E5%8D%8F%E6%96%B9%E5%B7%AE"><span class="nav-number">20.1.</span> <span class="nav-text">相关系数与协方差</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E4%B8%80%E5%80%BC%E3%80%81%E5%80%BC%E8%AE%A1%E6%95%B0%E4%BB%A5%E5%8F%8A%E6%88%90%E5%91%98%E8%B5%84%E6%A0%BC"><span class="nav-number">20.2.</span> <span class="nav-text">唯一值、值计数以及成员资格</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-4-%E6%80%BB%E7%BB%93"><span class="nav-number">21.</span> <span class="nav-text">5.4 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-1-%E8%AF%BB%E5%86%99%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="nav-number">22.</span> <span class="nav-text">6.1 读写文本格式的数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%90%E5%9D%97%E8%AF%BB%E5%8F%96%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-number">22.1.</span> <span class="nav-text">逐块读取文本文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E6%95%B0%E6%8D%AE%E5%86%99%E5%87%BA%E5%88%B0%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-number">22.2.</span> <span class="nav-text">将数据写出到文本格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E5%88%86%E9%9A%94%E7%AC%A6%E6%A0%BC%E5%BC%8F"><span class="nav-number">22.3.</span> <span class="nav-text">处理分隔符格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON%E6%95%B0%E6%8D%AE"><span class="nav-number">22.4.</span> <span class="nav-text">JSON数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML%E5%92%8CHTML%EF%BC%9AWeb%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="nav-number">22.5.</span> <span class="nav-text">XML和HTML：Web信息收集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A9%E7%94%A8lxml-objectify%E8%A7%A3%E6%9E%90XML"><span class="nav-number">22.6.</span> <span class="nav-text">利用lxml.objectify解析XML</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-2-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F"><span class="nav-number">23.</span> <span class="nav-text">6.2 二进制数据格式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8HDF5%E6%A0%BC%E5%BC%8F"><span class="nav-number">23.1.</span> <span class="nav-text">使用HDF5格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96Microsoft-Excel%E6%96%87%E4%BB%B6"><span class="nav-number">23.2.</span> <span class="nav-text">读取Microsoft Excel文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-3-Web-APIs%E4%BA%A4%E4%BA%92"><span class="nav-number">24.</span> <span class="nav-text">6.3 Web APIs交互</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-4-%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%A4%E4%BA%92"><span class="nav-number">25.</span> <span class="nav-text">6.4 数据库交互</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-5-%E6%80%BB%E7%BB%93"><span class="nav-number">26.</span> <span class="nav-text">6.5 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-1-%E5%A4%84%E7%90%86%E7%BC%BA%E5%A4%B1%E6%95%B0%E6%8D%AE"><span class="nav-number">27.</span> <span class="nav-text">7.1 处理缺失数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BB%A4%E9%99%A4%E7%BC%BA%E5%A4%B1%E6%95%B0%E6%8D%AE"><span class="nav-number">27.1.</span> <span class="nav-text">滤除缺失数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A1%AB%E5%85%85%E7%BC%BA%E5%A4%B1%E6%95%B0%E6%8D%AE"><span class="nav-number">27.2.</span> <span class="nav-text">填充缺失数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-2-%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2"><span class="nav-number">28.</span> <span class="nav-text">7.2 数据转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E6%95%B0%E6%8D%AE"><span class="nav-number">28.1.</span> <span class="nav-text">移除重复数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B0%E6%88%96%E6%98%A0%E5%B0%84%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2"><span class="nav-number">28.2.</span> <span class="nav-text">利用函数或映射进行数据转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E5%80%BC"><span class="nav-number">28.3.</span> <span class="nav-text">替换值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E8%BD%B4%E7%B4%A2%E5%BC%95"><span class="nav-number">28.4.</span> <span class="nav-text">重命名轴索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%BB%E6%95%A3%E5%8C%96%E5%92%8C%E9%9D%A2%E5%85%83%E5%88%92%E5%88%86"><span class="nav-number">28.5.</span> <span class="nav-text">离散化和面元划分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E5%92%8C%E8%BF%87%E6%BB%A4%E5%BC%82%E5%B8%B8%E5%80%BC"><span class="nav-number">28.6.</span> <span class="nav-text">检测和过滤异常值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%88%97%E5%92%8C%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7"><span class="nav-number">28.7.</span> <span class="nav-text">排列和随机采样</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%8C%87%E6%A0%87-%E5%93%91%E5%8F%98%E9%87%8F"><span class="nav-number">28.8.</span> <span class="nav-text">计算指标&#x2F;哑变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-3-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="nav-number">29.</span> <span class="nav-text">7.3 字符串操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95"><span class="nav-number">29.1.</span> <span class="nav-text">字符串对象方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">29.2.</span> <span class="nav-text">正则表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pandas%E7%9A%84%E7%9F%A2%E9%87%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="nav-number">29.3.</span> <span class="nav-text">pandas的矢量化字符串函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-4-%E6%80%BB%E7%BB%93"><span class="nav-number">30.</span> <span class="nav-text">7.4 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-1-%E5%B1%82%E6%AC%A1%E5%8C%96%E7%B4%A2%E5%BC%95"><span class="nav-number">31.</span> <span class="nav-text">8.1 层次化索引</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%8E%92%E4%B8%8E%E5%88%86%E7%BA%A7%E6%8E%92%E5%BA%8F"><span class="nav-number">31.1.</span> <span class="nav-text">重排与分级排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E7%BA%A7%E5%88%AB%E6%B1%87%E6%80%BB%E7%BB%9F%E8%AE%A1"><span class="nav-number">31.2.</span> <span class="nav-text">根据级别汇总统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8DataFrame%E7%9A%84%E5%88%97%E8%BF%9B%E8%A1%8C%E7%B4%A2%E5%BC%95"><span class="nav-number">31.3.</span> <span class="nav-text">使用DataFrame的列进行索引</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-2-%E5%90%88%E5%B9%B6%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">32.</span> <span class="nav-text">8.2 合并数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E4%B8%8A%E7%9A%84%E5%90%88%E5%B9%B6"><span class="nav-number">32.1.</span> <span class="nav-text">索引上的合并</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%B4%E5%90%91%E8%BF%9E%E6%8E%A5"><span class="nav-number">32.2.</span> <span class="nav-text">轴向连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E5%B9%B6%E9%87%8D%E5%8F%A0%E6%95%B0%E6%8D%AE"><span class="nav-number">32.3.</span> <span class="nav-text">合并重叠数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-3-%E9%87%8D%E5%A1%91%E5%92%8C%E8%BD%B4%E5%90%91%E6%97%8B%E8%BD%AC"><span class="nav-number">33.</span> <span class="nav-text">8.3 重塑和轴向旋转</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E5%A1%91%E5%B1%82%E6%AC%A1%E5%8C%96%E7%B4%A2%E5%BC%95"><span class="nav-number">33.1.</span> <span class="nav-text">重塑层次化索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E2%80%9C%E9%95%BF%E6%A0%BC%E5%BC%8F%E2%80%9D%E6%97%8B%E8%BD%AC%E4%B8%BA%E2%80%9C%E5%AE%BD%E6%A0%BC%E5%BC%8F%E2%80%9D"><span class="nav-number">33.2.</span> <span class="nav-text">将“长格式”旋转为“宽格式”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E2%80%9C%E5%AE%BD%E6%A0%BC%E5%BC%8F%E2%80%9D%E6%97%8B%E8%BD%AC%E4%B8%BA%E2%80%9C%E9%95%BF%E6%A0%BC%E5%BC%8F%E2%80%9D"><span class="nav-number">33.3.</span> <span class="nav-text">将“宽格式”旋转为“长格式”</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-1-matplotlib-API%E5%85%A5%E9%97%A8"><span class="nav-number">34.</span> <span class="nav-text">9.1 matplotlib API入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Figure%E5%92%8CSubplot"><span class="nav-number">34.1.</span> <span class="nav-text">Figure和Subplot</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%83%E6%95%B4subplot%E5%91%A8%E5%9B%B4%E7%9A%84%E9%97%B4%E8%B7%9D"><span class="nav-number">34.2.</span> <span class="nav-text">调整subplot周围的间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0%E5%92%8C%E7%BA%BF%E5%9E%8B"><span class="nav-number">34.3.</span> <span class="nav-text">颜色、标记和线型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%BB%E5%BA%A6%E3%80%81%E6%A0%87%E7%AD%BE%E5%92%8C%E5%9B%BE%E4%BE%8B"><span class="nav-number">34.4.</span> <span class="nav-text">刻度、标签和图例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A0%87%E9%A2%98%E3%80%81%E8%BD%B4%E6%A0%87%E7%AD%BE%E3%80%81%E5%88%BB%E5%BA%A6%E4%BB%A5%E5%8F%8A%E5%88%BB%E5%BA%A6%E6%A0%87%E7%AD%BE"><span class="nav-number">34.5.</span> <span class="nav-text">设置标题、轴标签、刻度以及刻度标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%9B%BE%E4%BE%8B"><span class="nav-number">34.6.</span> <span class="nav-text">添加图例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%9C%A8Subplot%E4%B8%8A%E7%BB%98%E5%9B%BE"><span class="nav-number">34.7.</span> <span class="nav-text">注解以及在Subplot上绘图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E5%9B%BE%E8%A1%A8%E4%BF%9D%E5%AD%98%E5%88%B0%E6%96%87%E4%BB%B6"><span class="nav-number">34.8.</span> <span class="nav-text">将图表保存到文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib%E9%85%8D%E7%BD%AE"><span class="nav-number">34.9.</span> <span class="nav-text">matplotlib配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-2-%E4%BD%BF%E7%94%A8pandas%E5%92%8Cseaborn%E7%BB%98%E5%9B%BE"><span class="nav-number">35.</span> <span class="nav-text">9.2 使用pandas和seaborn绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E5%9E%8B%E5%9B%BE"><span class="nav-number">35.1.</span> <span class="nav-text">线型图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="nav-number">35.2.</span> <span class="nav-text">柱状图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%92%8C%E5%AF%86%E5%BA%A6%E5%9B%BE"><span class="nav-number">35.3.</span> <span class="nav-text">直方图和密度图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%A3%E5%B8%83%E5%9B%BE%E6%88%96%E7%82%B9%E5%9B%BE"><span class="nav-number">35.4.</span> <span class="nav-text">散布图或点图</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-3-%E5%85%B6%E5%AE%83%E7%9A%84Python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="nav-number">36.</span> <span class="nav-text">9.3 其它的Python可视化工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-4-%E6%80%BB%E7%BB%93"><span class="nav-number">37.</span> <span class="nav-text">9.4 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-1-GroupBy%E6%9C%BA%E5%88%B6"><span class="nav-number">38.</span> <span class="nav-text">10.1 GroupBy机制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E5%88%86%E7%BB%84%E8%BF%9B%E8%A1%8C%E8%BF%AD%E4%BB%A3"><span class="nav-number">38.1.</span> <span class="nav-text">对分组进行迭代</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E5%8F%96%E4%B8%80%E5%88%97%E6%88%96%E5%88%97%E7%9A%84%E5%AD%90%E9%9B%86"><span class="nav-number">38.2.</span> <span class="nav-text">选取一列或列的子集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E7%B4%A2%E5%BC%95%E7%BA%A7%E5%88%AB%E5%88%86%E7%BB%84"><span class="nav-number">38.3.</span> <span class="nav-text">根据索引级别分组</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-2-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88"><span class="nav-number">39.</span> <span class="nav-text">10.2 数据聚合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%88%97%E7%9A%84%E5%A4%9A%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8"><span class="nav-number">39.1.</span> <span class="nav-text">面向列的多函数应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A5%E2%80%9C%E6%B2%A1%E6%9C%89%E8%A1%8C%E7%B4%A2%E5%BC%95%E2%80%9D%E7%9A%84%E5%BD%A2%E5%BC%8F%E8%BF%94%E5%9B%9E%E8%81%9A%E5%90%88%E6%95%B0%E6%8D%AE"><span class="nav-number">39.2.</span> <span class="nav-text">以“没有行索引”的形式返回聚合数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-3-apply%EF%BC%9A%E4%B8%80%E8%88%AC%E6%80%A7%E7%9A%84%E2%80%9C%E6%8B%86%E5%88%86%EF%BC%8D%E5%BA%94%E7%94%A8%EF%BC%8D%E5%90%88%E5%B9%B6%E2%80%9D"><span class="nav-number">40.</span> <span class="nav-text">10.3 apply：一般性的“拆分－应用－合并”</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%81%E6%AD%A2%E5%88%86%E7%BB%84%E9%94%AE"><span class="nav-number">40.1.</span> <span class="nav-text">禁止分组键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E4%BD%8D%E6%95%B0%E5%92%8C%E6%A1%B6%E5%88%86%E6%9E%90"><span class="nav-number">40.2.</span> <span class="nav-text">分位数和桶分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A%E7%94%A8%E7%89%B9%E5%AE%9A%E4%BA%8E%E5%88%86%E7%BB%84%E7%9A%84%E5%80%BC%E5%A1%AB%E5%85%85%E7%BC%BA%E5%A4%B1%E5%80%BC"><span class="nav-number">40.3.</span> <span class="nav-text">示例：用特定于分组的值填充缺失值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7%E5%92%8C%E6%8E%92%E5%88%97"><span class="nav-number">40.4.</span> <span class="nav-text">示例：随机采样和排列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%88%86%E7%BB%84%E5%8A%A0%E6%9D%83%E5%B9%B3%E5%9D%87%E6%95%B0%E5%92%8C%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="nav-number">40.5.</span> <span class="nav-text">示例：分组加权平均数和相关系数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A%E7%BB%84%E7%BA%A7%E5%88%AB%E7%9A%84%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92"><span class="nav-number">40.6.</span> <span class="nav-text">示例：组级别的线性回归</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-4-%E9%80%8F%E8%A7%86%E8%A1%A8%E5%92%8C%E4%BA%A4%E5%8F%89%E8%A1%A8"><span class="nav-number">41.</span> <span class="nav-text">10.4 透视表和交叉表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E8%A1%A8%EF%BC%9Acrosstab"><span class="nav-number">41.1.</span> <span class="nav-text">交叉表：crosstab</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-5-%E6%80%BB%E7%BB%93"><span class="nav-number">42.</span> <span class="nav-text">10.5 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-1-%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%B7%A5%E5%85%B7"><span class="nav-number">43.</span> <span class="nav-text">11.1 日期和时间数据类型及工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8Cdatetime%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2"><span class="nav-number">43.1.</span> <span class="nav-text">字符串和datetime的相互转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-2-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%9F%BA%E7%A1%80"><span class="nav-number">44.</span> <span class="nav-text">11.2 时间序列基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E3%80%81%E9%80%89%E5%8F%96%E3%80%81%E5%AD%90%E9%9B%86%E6%9E%84%E9%80%A0"><span class="nav-number">44.1.</span> <span class="nav-text">索引、选取、子集构造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%A6%E6%9C%89%E9%87%8D%E5%A4%8D%E7%B4%A2%E5%BC%95%E7%9A%84%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97"><span class="nav-number">44.2.</span> <span class="nav-text">带有重复索引的时间序列</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-3-%E6%97%A5%E6%9C%9F%E7%9A%84%E8%8C%83%E5%9B%B4%E3%80%81%E9%A2%91%E7%8E%87%E4%BB%A5%E5%8F%8A%E7%A7%BB%E5%8A%A8"><span class="nav-number">45.</span> <span class="nav-text">11.3 日期的范围、频率以及移动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4"><span class="nav-number">45.1.</span> <span class="nav-text">生成日期范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%91%E7%8E%87%E5%92%8C%E6%97%A5%E6%9C%9F%E5%81%8F%E7%A7%BB%E9%87%8F"><span class="nav-number">45.2.</span> <span class="nav-text">频率和日期偏移量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WOM%E6%97%A5%E6%9C%9F"><span class="nav-number">45.3.</span> <span class="nav-text">WOM日期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E5%8A%A8%EF%BC%88%E8%B6%85%E5%89%8D%E5%92%8C%E6%BB%9E%E5%90%8E%EF%BC%89%E6%95%B0%E6%8D%AE"><span class="nav-number">45.4.</span> <span class="nav-text">移动（超前和滞后）数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E5%81%8F%E7%A7%BB%E9%87%8F%E5%AF%B9%E6%97%A5%E6%9C%9F%E8%BF%9B%E8%A1%8C%E4%BD%8D%E7%A7%BB"><span class="nav-number">45.5.</span> <span class="nav-text">通过偏移量对日期进行位移</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-4-%E6%97%B6%E5%8C%BA%E5%A4%84%E7%90%86"><span class="nav-number">46.</span> <span class="nav-text">11.4 时区处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%B6%E5%8C%BA%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%92%8C%E8%BD%AC%E6%8D%A2"><span class="nav-number">47.</span> <span class="nav-text">时区本地化和转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%97%B6%E5%8C%BA%E6%84%8F%E8%AF%86%E5%9E%8BTimestamp%E5%AF%B9%E8%B1%A1"><span class="nav-number">47.1.</span> <span class="nav-text">操作时区意识型Timestamp对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E6%97%B6%E5%8C%BA%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-number">47.2.</span> <span class="nav-text">不同时区之间的运算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-5-%E6%97%B6%E6%9C%9F%E5%8F%8A%E5%85%B6%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97"><span class="nav-number">48.</span> <span class="nav-text">11.5 时期及其算术运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E6%9C%9F%E7%9A%84%E9%A2%91%E7%8E%87%E8%BD%AC%E6%8D%A2"><span class="nav-number">48.1.</span> <span class="nav-text">时期的频率转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E5%AD%A3%E5%BA%A6%E8%AE%A1%E7%AE%97%E7%9A%84%E6%97%B6%E6%9C%9F%E9%A2%91%E7%8E%87"><span class="nav-number">48.2.</span> <span class="nav-text">按季度计算的时期频率</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86Timestamp%E8%BD%AC%E6%8D%A2%E4%B8%BAPeriod%EF%BC%88%E5%8F%8A%E5%85%B6%E5%8F%8D%E5%90%91%E8%BF%87%E7%A8%8B%EF%BC%89"><span class="nav-number">48.3.</span> <span class="nav-text">将Timestamp转换为Period（及其反向过程）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E6%95%B0%E7%BB%84%E5%88%9B%E5%BB%BAPeriodIndex"><span class="nav-number">48.4.</span> <span class="nav-text">通过数组创建PeriodIndex</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-6-%E9%87%8D%E9%87%87%E6%A0%B7%E5%8F%8A%E9%A2%91%E7%8E%87%E8%BD%AC%E6%8D%A2"><span class="nav-number">49.</span> <span class="nav-text">11.6 重采样及频率转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%8D%E9%87%87%E6%A0%B7"><span class="nav-number">49.1.</span> <span class="nav-text">降采样</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E6%97%B6%E6%9C%9F%E8%BF%9B%E8%A1%8C%E9%87%8D%E9%87%87%E6%A0%B7"><span class="nav-number">49.2.</span> <span class="nav-text">通过时期进行重采样</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-7-%E7%A7%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0"><span class="nav-number">50.</span> <span class="nav-text">11.7 移动窗口函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E6%95%B0%E5%8A%A0%E6%9D%83%E5%87%BD%E6%95%B0"><span class="nav-number">50.1.</span> <span class="nav-text">指数加权函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%85%83%E7%A7%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0"><span class="nav-number">50.2.</span> <span class="nav-text">二元移动窗口函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E7%9A%84%E7%A7%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0"><span class="nav-number">50.3.</span> <span class="nav-text">用户定义的移动窗口函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-8-%E6%80%BB%E7%BB%93"><span class="nav-number">51.</span> <span class="nav-text">11.8 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-1-%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE"><span class="nav-number">52.</span> <span class="nav-text">12.1 分类数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%92%8C%E7%9B%AE%E7%9A%84"><span class="nav-number">52.1.</span> <span class="nav-text">背景和目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pandas%E7%9A%84%E5%88%86%E7%B1%BB%E7%B1%BB%E5%9E%8B"><span class="nav-number">52.2.</span> <span class="nav-text">pandas的分类类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E5%88%86%E7%B1%BB%E8%BF%9B%E8%A1%8C%E8%AE%A1%E7%AE%97"><span class="nav-number">52.3.</span> <span class="nav-text">用分类进行计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E5%88%86%E7%B1%BB%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD"><span class="nav-number">52.4.</span> <span class="nav-text">用分类提高性能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95"><span class="nav-number">52.5.</span> <span class="nav-text">分类方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E5%BB%BA%E6%A8%A1%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E5%8F%98%E9%87%8F"><span class="nav-number">52.6.</span> <span class="nav-text">为建模创建虚拟变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-2-GroupBy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8"><span class="nav-number">53.</span> <span class="nav-text">12.2 GroupBy高级应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E8%BD%AC%E6%8D%A2%E5%92%8C%E2%80%9C%E8%A7%A3%E5%B0%81%E2%80%9DGroupBy"><span class="nav-number">53.1.</span> <span class="nav-text">分组转换和“解封”GroupBy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%BB%84%E7%9A%84%E6%97%B6%E9%97%B4%E9%87%8D%E9%87%87%E6%A0%B7"><span class="nav-number">53.2.</span> <span class="nav-text">分组的时间重采样</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-3-%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF"><span class="nav-number">54.</span> <span class="nav-text">12.3 链式编程技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%A1%E9%81%93%E6%96%B9%E6%B3%95"><span class="nav-number">54.1.</span> <span class="nav-text">管道方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-4-%E6%80%BB%E7%BB%93"><span class="nav-number">55.</span> <span class="nav-text">12.4 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-1-pandas%E4%B8%8E%E6%A8%A1%E5%9E%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="nav-number">56.</span> <span class="nav-text">13.1 pandas与模型代码的接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-2-%E7%94%A8Patsy%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9E%8B%E6%8F%8F%E8%BF%B0"><span class="nav-number">57.</span> <span class="nav-text">13.2 用Patsy创建模型描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8Patsy%E5%85%AC%E5%BC%8F%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2"><span class="nav-number">57.1.</span> <span class="nav-text">用Patsy公式进行数据转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E5%92%8CPatsy"><span class="nav-number">57.2.</span> <span class="nav-text">分类数据和Patsy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-3-statsmodels%E4%BB%8B%E7%BB%8D"><span class="nav-number">58.</span> <span class="nav-text">13.3 statsmodels介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%B0%E8%AE%A1%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B"><span class="nav-number">58.1.</span> <span class="nav-text">估计线性模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%B0%E8%AE%A1%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E8%BF%87%E7%A8%8B"><span class="nav-number">58.2.</span> <span class="nav-text">估计时间序列过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-4-scikit-learn%E4%BB%8B%E7%BB%8D"><span class="nav-number">59.</span> <span class="nav-text">13.4 scikit-learn介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-5-%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0"><span class="nav-number">60.</span> <span class="nav-text">13.5 继续学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8pandas%E5%AF%B9%E6%97%B6%E5%8C%BA%E8%BF%9B%E8%A1%8C%E8%AE%A1%E6%95%B0"><span class="nav-number">60.1.</span> <span class="nav-text">用pandas对时区进行计数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-2-MovieLens-1M%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">61.</span> <span class="nav-text">14.2 MovieLens 1M数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E8%AF%84%E5%88%86%E5%88%86%E6%AD%A7"><span class="nav-number">61.1.</span> <span class="nav-text">计算评分分歧</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-3-1880-2010%E5%B9%B4%E9%97%B4%E5%85%A8%E7%BE%8E%E5%A9%B4%E5%84%BF%E5%A7%93%E5%90%8D"><span class="nav-number">62.</span> <span class="nav-text">14.3 1880-2010年间全美婴儿姓名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E5%91%BD%E5%90%8D%E8%B6%8B%E5%8A%BF"><span class="nav-number">62.1.</span> <span class="nav-text">分析命名趋势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%84%E4%BC%B0%E5%91%BD%E5%90%8D%E5%A4%9A%E6%A0%B7%E6%80%A7%E7%9A%84%E5%A2%9E%E9%95%BF"><span class="nav-number">62.2.</span> <span class="nav-text">评估命名多样性的增长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%AD%97%E6%AF%8D%E2%80%9D%E7%9A%84%E5%8F%98%E9%9D%A9"><span class="nav-number">62.3.</span> <span class="nav-text">“最后一个字母”的变革</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E6%88%90%E5%A5%B3%E5%AD%A9%E5%90%8D%E5%AD%97%E7%9A%84%E7%94%B7%E5%AD%A9%E5%90%8D%E5%AD%97%EF%BC%88%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%8F%8D%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%89"><span class="nav-number">62.4.</span> <span class="nav-text">变成女孩名字的男孩名字（以及相反的情况）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-4-USDA%E9%A3%9F%E5%93%81%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">63.</span> <span class="nav-text">14.4 USDA食品数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-5-2012%E8%81%94%E9%82%A6%E9%80%89%E4%B8%BE%E5%A7%94%E5%91%98%E4%BC%9A%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">64.</span> <span class="nav-text">14.5 2012联邦选举委员会数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E8%81%8C%E4%B8%9A%E5%92%8C%E9%9B%87%E4%B8%BB%E7%BB%9F%E8%AE%A1%E8%B5%9E%E5%8A%A9%E4%BF%A1%E6%81%AF"><span class="nav-number">64.1.</span> <span class="nav-text">根据职业和雇主统计赞助信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E5%87%BA%E8%B5%84%E9%A2%9D%E5%88%86%E7%BB%84"><span class="nav-number">64.2.</span> <span class="nav-text">对出资额分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E5%B7%9E%E7%BB%9F%E8%AE%A1%E8%B5%9E%E5%8A%A9%E4%BF%A1%E6%81%AF"><span class="nav-number">64.3.</span> <span class="nav-text">根据州统计赞助信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-1-ndarray%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E9%83%A8%E6%9C%BA%E7%90%86"><span class="nav-number">65.</span> <span class="nav-text">A.1 ndarray对象的内部机理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#NumPy%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BD%93%E7%B3%BB"><span class="nav-number">65.1.</span> <span class="nav-text">NumPy数据类型体系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-2-%E9%AB%98%E7%BA%A7%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C"><span class="nav-number">66.</span> <span class="nav-text">A.2 高级数组操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E9%87%8D%E5%A1%91"><span class="nav-number">66.1.</span> <span class="nav-text">数组重塑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C%E5%92%8CFortran%E9%A1%BA%E5%BA%8F"><span class="nav-number">66.2.</span> <span class="nav-text">C和Fortran顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%90%88%E5%B9%B6%E5%92%8C%E6%8B%86%E5%88%86"><span class="nav-number">66.3.</span> <span class="nav-text">数组的合并和拆分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A0%86%E5%8F%A0%E8%BE%85%E5%8A%A9%E7%B1%BB%EF%BC%9Ar-%E5%92%8Cc"><span class="nav-number">66.4.</span> <span class="nav-text">堆叠辅助类：r_和c_</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E9%87%8D%E5%A4%8D%E6%93%8D%E4%BD%9C%EF%BC%9Atile%E5%92%8Crepeat"><span class="nav-number">66.5.</span> <span class="nav-text">元素的重复操作：tile和repeat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8A%B1%E5%BC%8F%E7%B4%A2%E5%BC%95%E7%9A%84%E7%AD%89%E4%BB%B7%E5%87%BD%E6%95%B0%EF%BC%9Atake%E5%92%8Cput"><span class="nav-number">66.6.</span> <span class="nav-text">花式索引的等价函数：take和put</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-3-%E5%B9%BF%E6%92%AD"><span class="nav-number">67.</span> <span class="nav-text">A.3 广播</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B2%BF%E5%85%B6%E5%AE%83%E8%BD%B4%E5%90%91%E5%B9%BF%E6%92%AD"><span class="nav-number">67.1.</span> <span class="nav-text">沿其它轴向广播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E5%B9%BF%E6%92%AD%E8%AE%BE%E7%BD%AE%E6%95%B0%E7%BB%84%E7%9A%84%E5%80%BC"><span class="nav-number">67.2.</span> <span class="nav-text">通过广播设置数组的值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-4-ufunc%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8"><span class="nav-number">68.</span> <span class="nav-text">A.4 ufunc高级应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ufunc%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95"><span class="nav-number">68.1.</span> <span class="nav-text">ufunc实例方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E5%86%99%E6%96%B0%E7%9A%84ufunc"><span class="nav-number">68.2.</span> <span class="nav-text">编写新的ufunc</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-5-%E7%BB%93%E6%9E%84%E5%8C%96%E5%92%8C%E8%AE%B0%E5%BD%95%E5%BC%8F%E6%95%B0%E7%BB%84"><span class="nav-number">69.</span> <span class="nav-text">A.5 结构化和记录式数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97dtype%E5%92%8C%E5%A4%9A%E7%BB%B4%E5%AD%97%E6%AE%B5"><span class="nav-number">69.1.</span> <span class="nav-text">嵌套dtype和多维字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E7%BB%84"><span class="nav-number">69.2.</span> <span class="nav-text">为什么要用结构化数组</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-6-%E6%9B%B4%E5%A4%9A%E6%9C%89%E5%85%B3%E6%8E%92%E5%BA%8F%E7%9A%84%E8%AF%9D%E9%A2%98"><span class="nav-number">70.</span> <span class="nav-text">A.6 更多有关排序的话题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%B4%E6%8E%A5%E6%8E%92%E5%BA%8F%EF%BC%9Aargsort%E5%92%8Clexsort"><span class="nav-number">70.1.</span> <span class="nav-text">间接排序：argsort和lexsort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95"><span class="nav-number">70.2.</span> <span class="nav-text">其他排序算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E5%88%86%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84"><span class="nav-number">70.3.</span> <span class="nav-text">部分排序数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#numpy-searchsorted%EF%BC%9A%E5%9C%A8%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0"><span class="nav-number">70.4.</span> <span class="nav-text">numpy.searchsorted：在有序数组中查找元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8Numba%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89numpy-ufunc%E5%AF%B9%E8%B1%A1"><span class="nav-number">70.5.</span> <span class="nav-text">用Numba创建自定义numpy.ufunc对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-8-%E9%AB%98%E7%BA%A7%E6%95%B0%E7%BB%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">71.</span> <span class="nav-text">A.8 高级数组输入输出</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6"><span class="nav-number">71.1.</span> <span class="nav-text">内存映像文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HDF5%E5%8F%8A%E5%85%B6%E4%BB%96%E6%95%B0%E7%BB%84%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F"><span class="nav-number">71.2.</span> <span class="nav-text">HDF5及其他数组存储方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-9-%E6%80%A7%E8%83%BD%E5%BB%BA%E8%AE%AE"><span class="nav-number">72.</span> <span class="nav-text">A.9 性能建议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E5%86%85%E5%AD%98%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="nav-number">72.1.</span> <span class="nav-text">连续内存的重要性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-1-%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8E%86%E5%8F%B2"><span class="nav-number">73.</span> <span class="nav-text">B.1 使用命令历史</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E5%92%8C%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8E%86%E5%8F%B2"><span class="nav-number">73.1.</span> <span class="nav-text">搜索和重复使用命令历史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA%E5%8F%98%E9%87%8F"><span class="nav-number">73.2.</span> <span class="nav-text">输入和输出变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-2-%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BA%A4%E4%BA%92"><span class="nav-number">74.</span> <span class="nav-text">B.2 与操作系统交互</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell%E5%91%BD%E4%BB%A4%E5%92%8C%E5%88%AB%E5%90%8D"><span class="nav-number">74.1.</span> <span class="nav-text">Shell命令和别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95%E4%B9%A6%E7%AD%BE%E7%B3%BB%E7%BB%9F"><span class="nav-number">74.2.</span> <span class="nav-text">目录书签系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-3-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="nav-number">75.</span> <span class="nav-text">B.3 软件开发工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E4%BA%92%E8%B0%83%E8%AF%95%E5%99%A8"><span class="nav-number">75.1.</span> <span class="nav-text">交互调试器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%B0%83%E8%AF%95%E5%99%A8%E7%9A%84%E5%85%B6%E5%AE%83%E6%96%B9%E5%BC%8F"><span class="nav-number">75.2.</span> <span class="nav-text">使用调试器的其它方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%AE%A1%E6%97%B6%EF%BC%9A-time-%E5%92%8C-timeit"><span class="nav-number">75.3.</span> <span class="nav-text">代码计时：%time 和 %timeit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E5%88%86%E6%9E%90%EF%BC%9A-prun%E5%92%8C-run-p"><span class="nav-number">75.4.</span> <span class="nav-text">基础分析：%prun和%run -p</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%90%E8%A1%8C%E5%88%86%E6%9E%90%E5%87%BD%E6%95%B0"><span class="nav-number">75.5.</span> <span class="nav-text">逐行分析函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-4-%E4%BD%BF%E7%94%A8IPython%E9%AB%98%E6%95%88%E5%BC%80%E5%8F%91%E7%9A%84%E6%8A%80%E5%B7%A7"><span class="nav-number">76.</span> <span class="nav-text">B.4 使用IPython高效开发的技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E8%BD%BD%E6%A8%A1%E5%9D%97%E4%BE%9D%E8%B5%96"><span class="nav-number">76.1.</span> <span class="nav-text">重载模块依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7"><span class="nav-number">76.2.</span> <span class="nav-text">代码设计技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E6%8C%81%E7%9B%B8%E5%85%B3%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E6%8D%AE%E6%B4%BB%E8%B7%83"><span class="nav-number">76.3.</span> <span class="nav-text">保持相关对象和数据活跃</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%81%E5%B9%B3%E4%BC%98%E4%BA%8E%E5%B5%8C%E5%A5%97"><span class="nav-number">76.4.</span> <span class="nav-text">扁平优于嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%8B%E6%9C%8D%E5%AF%B9%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84%E6%81%90%E6%83%A7"><span class="nav-number">76.5.</span> <span class="nav-text">克服对大文件的恐惧</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-5-IPython%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD"><span class="nav-number">77.</span> <span class="nav-text">B.5 IPython高级功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A9%E7%B1%BB%E6%98%AF%E5%AF%B9IPython%E5%8F%8B%E5%A5%BD%E7%9A%84"><span class="nav-number">77.1.</span> <span class="nav-text">让类是对IPython友好的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">77.2.</span> <span class="nav-text">文件和配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-6-%E6%80%BB%E7%BB%93"><span class="nav-number">78.</span> <span class="nav-text">B.6 总结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
 
-<p>&emsp;&emsp;在终端输入上面的命令，将会打开使用Homebrew安装的Python 3解释器（如果有）。</p>
-<p>&emsp;&emsp;如果Homebrew版的Python 2安装了，<code>pip2</code> 指向Python 2。 如果Homebrew版的Python 3安装了，pip 指向Python 3。</p>
-<p>&emsp;&emsp;假定 python 指向 Python 3。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 我安装Python 3了吗？</span></span><br><span class="line"><span class="attribute">python</span> --version</span><br><span class="line"><span class="attribute">Python</span> <span class="number">3</span>.<span class="number">6</span>.<span class="number">4</span> Success!</span><br><span class="line"><span class="comment"># If you still see 2.7 ensure in PATH /usr/local/bin/ takes pecedence over /usr/bin/</span></span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;如果在终端输入<code>python --version</code>返回的是python2的版本，不用迷惑，那是因为mac自带python。那么，如果想使用刚才安装的python3，<a href="https://edwardvoon.github.io/posts/4a17b156.html">跟我来。</a></p>
-<h1 id="Pipenv-amp-虚拟环境"><a href="#Pipenv-amp-虚拟环境" class="headerlink" title="Pipenv &amp; 虚拟环境"></a>Pipenv &amp; 虚拟环境</h1><p>&emsp;&emsp;下一步安装 Pipenv，然后就可以安装依赖关系并管理虚拟环境。</p>
-<p>&emsp;&emsp;虚拟环境工具通过为不同项目创建专属的 Python 虚拟环境，以实现其依赖的库独立保存在不同的路径。 这解决了“项目X依赖于 1.x 版本，但项目 Y 需要 4.x”的难题，并且维持全局的 site-packages 目录干净、易管理。</p>
-<p>&emsp;&emsp;举个例子，通过这个工具可以实现依赖 Django 1.10 的项目与依赖 Django 1.8 的项目共存。</p>
-<p>&emsp;&emsp;所以，向前！<del><a href="#">进入到 Pipenv &amp; 虚拟环境</a></del> 文档中！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>如何关闭MacOs ipv6</title>
-    <url>/posts/6ac965e2.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;一些Mac用户可能希望在其机器上禁用IPv6网络支持。这可能是希望的，以避免某些网络冲突，或增加用户在更高的威胁环境中的安全性，因为研究人员已经发现IPv6可能易受中间人和其他网络攻击的攻击。</p>
-<p>&emsp;&emsp;虽然大多数用户不直接使用IPv6，但禁用IPv6并不是没有后果，因此只能由知道他们正在做什么的用户以及为什么这样做的用户来完成。一些核心OS X系统服务，如发现服务Bonjour，使用IPv6.因此，禁用IPv6可能会导致AirDrop共享不可用，某些打印服务将变得不可用，并且某些其他方便的Mac功能也可能无法使用。这使得禁用许多人不切实际。</p>
-<p>&emsp;&emsp;OS X提供了几种关闭IPv6的方法，并且很好地介绍了使用命令行的简单方法，以及如果您确定需要，将演示如何重新启动IPv6.用户还可以通过“系统偏好设置”来检查IPv6是否被主动使用，哪个Mac OS X默认进入自动状态。</p>
-<p>&emsp;&emsp;下面就说下关闭macOs ipv6的具体操作步骤</p>
-<h3 id="打开电脑的命令行工具"><a href="#打开电脑的命令行工具" class="headerlink" title="打开电脑的命令行工具"></a>打开电脑的命令行工具</h3><p>输入命令 <code>networksetup -listnetworkserviceorder</code>,以查找电脑上已经存在的网络服务，如下图：</p>
-<p>&emsp;&emsp;</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>设置python默认版本(MAC)</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>&emsp;&emsp;回到之前我们遇到的问题，在终端输入<code>python --version</code>返回的版本是2.x.x。原因是，在mac系统下，就已经安装了python。我们该怎样在终端设置默认的python启动版本，也就是我们已经安装的python3。下面的设置，让你如愿以偿。</p>
-<h1 id="打开终端"><a href="#打开终端" class="headerlink" title="打开终端"></a>打开终端</h1><p>输入命令<br><code>open ~/.bash_profile</code></p>
-<p>返回的信息如果是</p>
-<p>The file /Users/&lt;电脑名&gt;/.bash_profile does not exist.</p>
-<p>意思是，<code>.bash_profile</code>不存在，那就看你是不是安装了<code>oh-my-zsh</code>,如果是，请接着往下看：</p>
-<p>open ~/.zshrc</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Python数据分析-自用</title>
-    <url>/posts/d928decb.html</url>
-    <content><![CDATA[<h1 id="第1章-准备工作"><a href="#第1章-准备工作" class="headerlink" title="第1章 准备工作"></a>第1章 准备工作</h1><h2 id="1-1-本书的内容"><a href="#1-1-本书的内容" class="headerlink" title="1.1 本书的内容"></a>1.1 本书的内容</h2><p>本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。</p>
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Edward voon"
+      src="/images/avatar.jpeg">
+  <p class="site-author-name" itemprop="name">Edward voon</p>
+  <div class="site-description" itemprop="description">如果有未完成的梦想，那就让她在时间里尽情玩耍吧！</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Vkd2FyZHZvb24=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;edwardvoon"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9lZHdhcmR2b29u" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;edwardvoon"><i class="fab fa-twitter fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL2Vkd2FyZF92b29u" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;edward_voon"><i class="fab fa-instagram fa-fw"></i></span>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Vkd2FyZHZvb24=" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://edwardvoon.github.io/posts/d928decb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Edward voon">
+      <meta itemprop="description" content="如果有未完成的梦想，那就让她在时间里尽情玩耍吧！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fantast">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python数据分析-自用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-08-09 08:42:25" itemprop="dateCreated datePublished" datetime="2021-08-09T08:42:25+08:00">2021-08-09</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="第1章-准备工作"><a href="#第1章-准备工作" class="headerlink" title="第1章 准备工作"></a>第1章 准备工作</h1><h2 id="1-1-本书的内容"><a href="#1-1-本书的内容" class="headerlink" title="1.1 本书的内容"></a>1.1 本书的内容</h2><p>本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。</p>
 <h3 id="什么样的数据？"><a href="#什么样的数据？" class="headerlink" title="什么样的数据？"></a>什么样的数据？</h3><p>当书中出现“数据”时，究竟指的是什么呢？主要指的是结构化数据（structured data），这个故意含糊其辞的术语代指了所有通用格式的数据，例如：</p>
 <ul>
 <li>表格型数据，其中各列可能是不同的类型（字符串、数值、日期等）。比如保存在关系型数据库中或以制表符/逗号为分隔符的文本文件中的那些数据。</li>
@@ -5082,6 +5448,144 @@
 
 <h1 id="B-6-总结"><a href="#B-6-总结" class="headerlink" title="B.6 总结"></a>B.6 总结</h1><p>学习过本书中的代码案例，你的Python技能得到了一定的提升，我建议你持续学习IPython和Jupyter。因为这两个项目的设计初衷就是提高生产率的，你可能还会发现一些工具，可以让你更便捷地使用Python和计算库。</p>
 <p>你可以在nbviewer（<span class="exturl" data-url="aHR0cHM6Ly9uYnZpZXdlci5qdXB5dGVyLm9yZy8lRUYlQkMlODklRTQlQjglOEElRTYlODklQkUlRTUlODglQjAlRTYlOUIlQjQlRTUlQTQlOUElRTYlOUMlODklRTglQjYlQTMlRTclOUElODRKdXB5dGVy">https://nbviewer.jupyter.org/）上找到更多有趣的Jupyter<i class="fa fa-external-link-alt"></i></span> notebooks。</p>
-]]></content>
-  </entry>
-</search>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      Post author: Edward voon
+  </li>
+  <li class="post-copyright-link">
+      Post link: 
+      <a href="https://edwardvoon.github.io/posts/d928decb.html" title="Python数据分析-自用">https://edwardvoon.github.io/posts/d928decb.html</a>
+  </li>
+  <li class="post-copyright-license">
+    Copyright Notice: All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1IYW5z"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/4a17b156.html" rel="prev" title="设置python默认版本(MAC)">
+                  <i class="fa fa-chevron-left"></i> 设置python默认版本(MAC)
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Edward voon</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://edwardvoon.github.io/posts/d928decb.html',]
+      });
+      });
+  </script>
+
+</body>
+</html>
